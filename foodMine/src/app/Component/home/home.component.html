@@ -1,7 +1,10 @@
+<app-search></app-search>
+<app-tags></app-tags>
+
 <ul>
   <li *ngFor="let food of foods">
-    <a
-      ><img src="{{ food.imageUrl }}" />
+    <a routerLink="/food/{{food.id}}">
+      <img src="{{ food.imageUrl }}" />
       <div class="content">
         <div class="name">
           {{ food.name }}
